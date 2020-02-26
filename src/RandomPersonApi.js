@@ -4,7 +4,7 @@ const randomPerson = () => {
     .then(result => result.results[0]);
 };
 
-const suspensePromise = promise => {
+export const suspensePromise = promise => {
   let status = "pending";
   let result = "";
   let suspend = promise.then(
